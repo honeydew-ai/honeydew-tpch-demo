@@ -1,0 +1,4 @@
+type: entity
+name: parts
+key: partkey
+key_dataset: tpch_parts

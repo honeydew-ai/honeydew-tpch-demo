@@ -1,0 +1,23 @@
+type: dataset
+entity: parts
+name: tpch_parts
+sql:
+  "SELECT \n  p_partkey as partkey,\n  p_name,\n  p_mfgr,\n  p_brand,\n  p_type,\n\
+  \  p_size,\n  p_container,\n  p_retailprice\nFROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.PART\n"
+attributes:
+  - column: partkey
+    name: partkey
+  - column: p_name
+    name: name
+  - column: p_mfgr
+    name: manufacturer
+  - column: p_brand
+    name: brand
+  - column: p_type
+    name: part_type
+  - column: p_size
+    name: part_size
+  - column: p_container
+    name: partcontainer
+  - column: p_retailprice
+    name: retailprice

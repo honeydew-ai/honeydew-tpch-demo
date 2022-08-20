@@ -1,0 +1,15 @@
+type: dataset
+entity: customers
+name: tpch_customers
+sql:
+  "SELECT \n  c_custkey as custkey,\n  c_name,\n  c_nationkey,\n  c_acctbal\nFROM\
+  \ SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMERS\n"
+attributes:
+  - column: custkey
+    name: custkey
+  - column: c_name
+    name: name
+  - column: c_nationkey
+    name: c_nationkey
+  - column: c_acctbal
+    name: balance

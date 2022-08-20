@@ -1,0 +1,12 @@
+type: perspective
+name: MyPerspective
+attributes:
+  - entity: parts
+    attribute: brand
+  - entity: orders
+    attribute: status
+metrics:
+  - entity: order_lines
+    metric: revenue
+  - entity: order_lines
+    metric: tot_quantity

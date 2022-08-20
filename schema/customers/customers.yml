@@ -1,0 +1,4 @@
+type: entity
+name: customers
+key: custkey
+key_dataset: tpch_customers

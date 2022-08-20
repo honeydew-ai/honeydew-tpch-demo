@@ -1,0 +1,13 @@
+type: entity
+name: order_lines
+key: orderlinekey
+key_dataset: tpch_order_lines
+relations:
+  - src_field: l_orderkey
+    target_entity: orders
+    target_field: orderkey
+    rel_type: many-to-one
+  - src_field: l_partkey
+    target_entity: parts
+    target_field: partkey
+    rel_type: many-to-one

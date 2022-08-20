@@ -1,0 +1,8 @@
+type: filter
+entity: orders
+name: is_fully_shipped
+filter_sql: |-
+  status = "O"
+dependencies:
+  orders:
+    - status

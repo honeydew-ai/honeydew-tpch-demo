@@ -1,0 +1,11 @@
+type: metric
+entity: order_lines
+name: tot_quantity
+datatype: number
+agg_sql: |-
+  SUM(quantity)
+ignore_entity_filters: false
+grouping_mode: any
+dependencies:
+  order_lines:
+    - quantity

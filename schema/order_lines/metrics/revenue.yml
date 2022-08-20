@@ -1,0 +1,12 @@
+type: metric
+entity: order_lines
+name: revenue
+datatype: number
+agg_sql: |-
+  SUM(price*(1-discount))
+ignore_entity_filters: false
+grouping_mode: any
+dependencies:
+  order_lines:
+    - price
+    - discount

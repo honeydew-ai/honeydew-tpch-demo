@@ -1,0 +1,37 @@
+type: dataset
+entity: order_lines
+name: tpch_order_lines
+sql:
+  "SELECT \n  l_orderkey || '_' || l_linenumber as orderlinekey, -- build a composite\
+  \ key\n  l_linenumber,\n  l_orderkey,\n  l_partkey,\n  l_quantity,\n  l_discount,\n\
+  \  l_extendedprice,\n  l_returnflag,\n  l_linestatus,\n  l_tax,\n  l_shipdate,\n\
+  \  l_commitdate,\n  l_receiptdate,\n  l_shipmode\nFROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.LINEITEM\n"
+attributes:
+  - column: orderlinekey
+    name: orderlinekey
+  - column: l_linenumber
+    name: l_linenumber
+  - column: l_orderkey
+    name: l_orderkey
+  - column: l_partkey
+    name: l_partkey
+  - column: l_discount
+    name: discount
+  - column: l_extendedprice
+    name: price
+  - column: l_quantity
+    name: quantity
+  - column: l_returnflag
+    name: returnflag
+  - column: l_linestatus
+    name: status
+  - column: l_tax
+    name: tax
+  - column: l_shipdate
+    name: shipdate
+  - column: l_commitdate
+    name: commitdate
+  - column: l_receiptdate
+    name: receiptdate
+  - column: l_shipmode
+    name: shipmode
